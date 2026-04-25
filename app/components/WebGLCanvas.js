@@ -154,8 +154,9 @@ export default function WebGLCanvas() {
       if (!refs.renderer || !refs.uniforms) return;
       const width = window.innerWidth;
       const height = window.innerHeight;
+      const dpr = refs.renderer.getPixelRatio();
       refs.renderer.setSize(width, height, false);
-      refs.uniforms.resolution.value = [width, height];
+      refs.uniforms.resolution.value = [width * dpr, height * dpr];
     };
 
     initScene();

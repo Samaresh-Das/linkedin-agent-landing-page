@@ -28,9 +28,10 @@ export default function Home() {
           textAlign: 'center',
           borderTop: '1px solid rgba(255,255,255,0.06)',
           fontFamily: 'var(--font-mono)',
-          fontSize: '0.7rem',
-          color: 'var(--text-tertiary)',
-          letterSpacing: '0.1em',
+          fontSize: '0.65rem',
+          fontWeight: 700,
+          color: 'var(--text-secondary)',
+          letterSpacing: '0.2em',
           textTransform: 'uppercase',
           animation: 'pulse-text 3s infinite ease-in-out',
         }}>
